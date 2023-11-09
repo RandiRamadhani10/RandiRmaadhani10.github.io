@@ -1,6 +1,7 @@
 import React from 'react'
 import SectionCover from '../section/SectionCover'
 import SectionAbout from '../section/SectionAbout'
+import SectionServices from '../section/SectionServices'
 
 const Home = () => {
   return (
@@ -11,7 +12,8 @@ const Home = () => {
       {/* section about */}
       <SectionAbout/>
 
-      <div className='h-[1000px]'>kasdhjaskdh</div>
+      {/* section services */}
+      <SectionServices/>
     </div>
   )
 }

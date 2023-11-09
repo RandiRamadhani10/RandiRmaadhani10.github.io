@@ -68,7 +68,7 @@ const Navbar = () => {
 
           {/* contact */}
           <a href={"/#contact"}>
-            <div className="hidden lg:block bg-def-green-200 font-bold text-sm py-3 px-8 cursor-pointer hover:bg-def-dark-200 hover:text-def-light-100 ease-in-out duration-300">
+            <div className={`hidden lg:block bg-def-green-200 font-bold text-sm py-3 px-8 cursor-pointer ${isScrolling ? 'hover:bg-white hover:text-def-dark-200' : 'hover:bg-def-dark-200 hover:text-def-light-100'} ease-in-out duration-300`}>
               <p>{"Let's Talk"}</p>
             </div>
           </a>
