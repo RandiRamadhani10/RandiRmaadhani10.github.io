@@ -27,7 +27,7 @@ const SectionCover = () => {
             </div>
 
             {/* button */}
-            <div className="flex justify-center md:justify-start items-center gap-10 flex-wrap">
+            <div className="flex justify-center md:justify-start items-center sm:gap-10 gap-4">
               {/* hire me */}
               <a href={"/#contact"}>
                 <div className="bg-def-green-200 font-bold text-sm py-3 px-8 cursor-pointer hover:bg-def-dark-200 hover:text-def-light-100 ease-in-out duration-300">
