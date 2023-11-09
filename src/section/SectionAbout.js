@@ -2,11 +2,12 @@ import React from "react";
 
 // library
 import CountUp from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
 
 const SectionAbout = () => {
   return (
     <div id="about" className="bg-def-dark-200 w-full">
-      <div className="relative overflow-hidden max-w-6xl m-auto text-white pt-28 px-5">
+      <div className="relative max-w-6xl m-auto text-white pt-28 px-5">
         {/* title */}
         <div className="flex justify-center mb-9">
           <div className="text-2xl font-bold">About Me</div>
@@ -29,16 +30,22 @@ const SectionAbout = () => {
           <div className="flex flex-col items-center">
             <div className="font-bold text-4xl mb-2 text-[#9effe1]">
               <CountUp
-                start={0}
+                start={-500}
                 end={502}
                 duration={1.5}
                 useEasing={true}
-                enableScrollSpy={true}
-                scrollSpyDelay={2}
+                enableScrollSpy={false}
+                scrollSpyDelay={5}
                 useGrouping={true}
                 separator=","
                 decimal="."
-              />
+              >
+                {({ countUpRef, start }) => (
+                  <VisibilitySensor onChange={start}>
+                    <span ref={countUpRef} />
+                  </VisibilitySensor>
+                )}
+              </CountUp>
             </div>
             <div>Projects Done</div>
           </div>
@@ -51,12 +58,18 @@ const SectionAbout = () => {
                 end={10}
                 duration={1.5}
                 useEasing={true}
-                enableScrollSpy={true}
-                scrollSpyDelay={2}
+                enableScrollSpy={false}
+                scrollSpyDelay={5}
                 useGrouping={true}
                 separator=","
                 decimal="."
-              />
+              >
+                {({ countUpRef, start }) => (
+                  <VisibilitySensor onChange={start}>
+                    <span ref={countUpRef} />
+                  </VisibilitySensor>
+                )}
+              </CountUp>
               <span>+</span>
             </div>
             <div>Year Of Experience</div>
@@ -66,16 +79,22 @@ const SectionAbout = () => {
           <div className="flex flex-col items-center">
             <div className="font-bold text-4xl mb-2 text-[#9effe1]">
               <CountUp
-                start={-200}
-                end={273}
+                start={-500}
+                end={200}
                 duration={1.5}
                 useEasing={true}
-                enableScrollSpy={true}
-                scrollSpyDelay={2}
+                enableScrollSpy={false}
+                scrollSpyDelay={5}
                 useGrouping={true}
                 separator=","
                 decimal="."
-              />
+              >
+                {({ countUpRef, start }) => (
+                  <VisibilitySensor onChange={start}>
+                    <span ref={countUpRef} />
+                  </VisibilitySensor>
+                )}
+              </CountUp>
               <span>+</span>
             </div>
             <div>Clents Served</div>
