@@ -7,7 +7,7 @@ import VisibilitySensor from "react-visibility-sensor";
 const SectionAbout = () => {
   return (
     <div id="about" className="bg-def-dark-200 w-full">
-      <div className="relative max-w-6xl m-auto text-white pt-28 px-5">
+      <div className="overflow-hidden max-w-6xl m-auto text-white pt-28 px-5">
         {/* title */}
         <div className="flex justify-center mb-9">
           <div className="text-2xl font-bold">About Me</div>
@@ -102,8 +102,8 @@ const SectionAbout = () => {
         </div>
 
         {/* hiasan */}
-        <div className="w-full flex justify-center mt-10">
-          <div className="w-[200px] h-[95px] bg-def-green-200 rounded-t-full" />
+        <div className="w-full flex justify-center mt-10 mb-[-180px]">
+          <div className="w-[234px] h-[234px] bg-def-green-200 rounded-full" />
         </div>
       </div>
     </div>
