@@ -1,10 +1,25 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="bg-red-800">
-      <div className="bg-bg-100 text-red-300">hello</div>
-    </div>
+    <main>
+      <Router>
+        <Navbar />
+        <Routes>
+          {/* home */}
+          <Route
+            exact
+            path={'/'}
+            element={<Home />}
+          />
+        </Routes>
+        <Footer />
+      </Router>
+    </main>
   );
 }
 
