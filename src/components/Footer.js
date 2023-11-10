@@ -11,30 +11,30 @@ const Footer = () => {
     <div className="bg-def-dark-200 w-full">
       <div className="max-w-6xl m-auto text-white pt-20 pb-10 px-5 relative">
         {/* logo */}
-        <div className="flex justify-center items-start left-0 right-0 absolute max-md:top-[40px]">
+        <a href="#home" className="flex justify-center items-start left-0 right-0 absolute max-md:top-[40px] w-fit m-auto">
           <div className="font-bold text-2xl cursor-pointer">
             <div>
               RAN<span className="text-def-green-100">DI</span>
             </div>
           </div>
-        </div>
+        </a>
 
         {/* button */}
         <div className="flex justify-center items-center flex-wrap sm:gap-40 gap-5 mt-1">
           <div className="flex justify-between items-center gap-5">
             {/* about */}
-            <div>About</div>
+            <a href="#about" className="hover:text-def-green-100 ease-in-out duration-300 cursor-pointer">About</a>
 
             {/* services */}
-            <div>Services</div>
+            <a href="#services" className="hover:text-def-green-100 ease-in-out duration-300 cursor-pointer">Services</a>
           </div>
 
           <div className="flex justify-between items-center gap-5">
             {/* portfolio */}
-            <div>Portfolio</div>
+            <a href="#portfolio" className="hover:text-def-green-100 ease-in-out duration-300 cursor-pointer">Portfolio</a>
 
             {/* Skills */}
-            <div>Skills</div>
+            <a href="#skills" className="hover:text-def-green-100 ease-in-out duration-300 cursor-pointer">Skills</a>
           </div>
         </div>
 

@@ -34,7 +34,7 @@ const SectionCover = () => {
               </a>
 
               {/* portfolio */}
-              <a href={"/#contact"}>
+              <a href={"/#portfolio"}>
                 <div className="bg-white text-def-dark-200 font-bold text-sm py-3 px-8 cursor-pointer hover:bg-def-dark-200 hover:text-def-light-100 ease-in-out duration-300">
                   <p>Portfolio</p>
                 </div>

@@ -19,6 +19,7 @@ import {
   ArrowSmallRightIcon,
   ArrowSmallLeftIcon,
 } from "@heroicons/react/24/solid";
+import PopUpPortfolio from "../components/PopUpPortfolio";
 
 // dumy data
 const dummyData = [
@@ -69,6 +70,8 @@ function getWindowDimensions() {
 }
 
 const SectionPortfolio = () => {
+  const [isOpenModal, setisOpenModal] = useState(false)
+  const [selectedPorto, setselectedPorto] = useState({})
   const [controlledSwiper, setControlledSwiper] = useState(null);
   const [windowDimensions, setWindowDimensions] = useState(
     getWindowDimensions()
@@ -125,7 +128,14 @@ const SectionPortfolio = () => {
             className="swiper w-[87%]"
           >
             {dummyData.map((res, index) => (
-              <SwiperSlide key={"itemCardPorto" + index} className="mb-1">
+              <SwiperSlide 
+                key={"itemCardPorto" + index} 
+                className="mb-1"
+                onClick={async() => {
+                  await setselectedPorto(res)
+                  await setisOpenModal(true)
+                }}
+              >
                 <CardPortfolio
                   title={res.title}
                   descript={res.descript}
@@ -158,6 +168,9 @@ const SectionPortfolio = () => {
             </div>
           </div>
         </div>
+
+        {/* pop up */}
+        <PopUpPortfolio isOpen={isOpenModal} setisopen={setisOpenModal} data={selectedPorto}/>
       </div>
     </div>
   );

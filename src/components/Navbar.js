@@ -39,28 +39,28 @@ const Navbar = () => {
           <div className="hidden lg:flex gap-20 font-light text-base text-[#ffffffa8]">
             {/* about */}
             <a href="/#about">
-              <div className="cursor-pointer hover:text-white ease-in-out duration-300">
+              <div className="cursor-pointer hover:text-def-green-100 ease-in-out duration-300">
                 <p>About</p>
               </div>
             </a>
 
             {/* Services */}
             <a href={"/#services"}>
-              <div className="cursor-pointer hover:text-white ease-in-out duration-300">
+              <div className="cursor-pointer hover:text-def-green-100 ease-in-out duration-300">
                 <p>Services</p>
               </div>
             </a>
 
             {/* Portfolio */}
             <a href={"/#portfolio"}>
-              <div className="cursor-pointer hover:text-white ease-in-out duration-300">
+              <div className="cursor-pointer hover:text-def-green-100 ease-in-out duration-300">
                 <p>Portfolio</p>
               </div>
             </a>
 
             {/* Skills */}
             <a href={"/#skills"}>
-              <div className="cursor-pointer hover:text-white ease-in-out duration-300">
+              <div className="cursor-pointer hover:text-def-green-100 ease-in-out duration-300">
                 <p>Skills</p>
               </div>
             </a>

@@ -21,9 +21,9 @@ const CardPortfolio = ({ title, descript, image }) => {
 
       {/* descript */}
       <div
-        className="flex justify-between items-start gap-3"
+        className="flex justify-between items-center gap-3"
       >
-        <div className="max-w-[200px]">{descript}</div>
+        <div className="max-w-[200px] whitespace-nowrap overflow-hidden text-ellipsis">{descript}</div>
 
         <ArrowLongRightIcon className="w-9 bg-def-dark-100 rounded-full px-2 py-2 -rotate-45 group-hover:rotate-0 ease-in-out duration-500 group-hover:bg-def-green-200"/>
       </div>
