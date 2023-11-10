@@ -15,8 +15,6 @@ const CardSkill = ({ title, progress = '0%', isVisible }) => {
     }, 100);
   }, [isVisible])
 
-  console.log(isVisible)
-
   return (
     <div className="w-[100%] sm:w-[45%] group">
       <div className="font-bold text-lg mb-2">{title}</div>

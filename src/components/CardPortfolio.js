@@ -6,7 +6,7 @@ const CardPortfolio = ({ title, descript, image }) => {
   return (
     <div className="group cursor-pointer">
       {/* image */}
-      <div className="overflow-hidden max-w-[300px]">
+      <div className="overflow-hidden md:max-w-[300px]">
         <img
           src={image}
           className="object-cover group-hover:scale-110 ease-in-out duration-300"

@@ -1,0 +1,8 @@
+.my-custom-pagination-div .swiper-pagination-bullet{
+    background-color: #03b781;
+    opacity: .5;
+}
+
+.my-custom-pagination-div .swiper-pagination-bullet-active{
+    opacity: 1;
+}
