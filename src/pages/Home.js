@@ -4,6 +4,7 @@ import SectionAbout from '../section/SectionAbout'
 import SectionServices from '../section/SectionServices'
 import SectionPortfolio from '../section/SectionPortfolio'
 import SectionSkills from '../section/SectionSkills'
+import SectionContact from '../section/SectionContact'
 
 const Home = () => {
   return (
@@ -22,6 +23,9 @@ const Home = () => {
 
       {/* section skills */}
       <SectionSkills/>
+
+      {/* section contact */}
+      <SectionContact/>
     </div>
   )
 }
