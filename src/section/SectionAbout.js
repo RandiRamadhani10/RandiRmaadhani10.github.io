@@ -103,7 +103,7 @@ const SectionAbout = () => {
 
         {/* hiasan */}
         <div className="w-full flex justify-center mt-10 mb-[-180px]">
-          <div className="w-[234px] h-[234px] bg-def-green-200 rounded-full" />
+          <div className="w-[234px] h-[234px] bg-gradient-to-t from-def-dark-200 to-def-green-100 rounded-full" />
         </div>
       </div>
     </div>

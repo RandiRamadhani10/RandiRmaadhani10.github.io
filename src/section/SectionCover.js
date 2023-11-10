@@ -1,21 +1,19 @@
 import React from "react";
 
 // image
-import FotoCV from '../assets/image/user.png'
+import FotoCV from "../assets/image/user.png";
 
 const SectionCover = () => {
   return (
     <div id="home" className="bg-def-dark-100 w-full">
       <div className="max-w-6xl m-auto text-white py-28 px-5">
         {/* hiasan */}
-        <div className="bg-def-green-100 w-32 h-32 absolute top-[-70px] rounded-full lg:left-[20vw] left-[30vw]" />
+        <div className="bg-gradient-to-b from-def-dark-200 to-def-green-100 w-32 h-32 absolute top-[-70px] rounded-full lg:left-[20vw] left-[30vw]" />
 
         {/* main */}
-        <div className="flex justify-between items-center flex-col-reverse md:flex-row">
+        <div className="flex justify-between items-center flex-col-reverse md:flex-row gap-10">
           {/* description */}
-          <div
-            className="text-center md:text-left"
-          >
+          <div className="text-center md:text-left">
             <div className="text-lg mb-6">Programmer</div>
             <div className="font-bold text-6xl max-w-[450px] mb-3">
               Hi There, I'm{" "}
@@ -45,13 +43,28 @@ const SectionCover = () => {
           </div>
 
           {/* photo */}
-          <div 
-            className="bg-def-dark-200 max-w-[400px] rounded-t-full p-2 mb-9 md:mb-0"
-          >
+          <div className="relative w-[300px] h-[300px]">
+            {/* foto */}
+            <div className="absolute w-full left-0">
+              <img
+                src={FotoCV}
+                alt="foto cv"
+                className="relative z-[16] "
+              />
+            </div>
+
+            {/* hiasan */}
             <div
-              className="bg-def-green-200 rounded-t-full"
+              className="absolute bottom-[-19px] flex items-end justify-center sm:-left-5 left-0"
             >
-              <img src={FotoCV} alt="foto user"/>
+              <div>
+                <div className="w-[160px] h-[160px] bg-gradient-to-r from-def-green-200 to-def-dark-200 absolute bottom-10 -left-10 rounded-full"/>
+                <div className="w-[150px] h-[320px] bg-def-dark-200"/>
+              </div>
+              <div>
+                <div className="w-[60px] h-[60px] bg-gradient-to-r from-[#278568] to-def-green-100 absolute top-0 right-6 rounded-full"/>
+                <div className="w-[150px] h-[200px] bg-def-dark-200"/>
+              </div>
             </div>
           </div>
         </div>
