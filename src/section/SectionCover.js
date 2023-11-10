@@ -43,7 +43,7 @@ const SectionCover = () => {
           </div>
 
           {/* photo */}
-          <div className="relative w-[300px] h-[300px]">
+          <div className="group relative w-[300px] h-[300px]">
             {/* foto */}
             <div className="absolute w-full left-0">
               <img
@@ -58,11 +58,11 @@ const SectionCover = () => {
               className="absolute bottom-[-19px] flex items-end justify-center sm:-left-5 left-0"
             >
               <div>
-                <div className="w-[160px] h-[160px] bg-gradient-to-r from-def-green-200 to-def-dark-200 absolute bottom-10 -left-10 rounded-full"/>
+                <div className="w-[160px] h-[160px] bg-gradient-to-r from-def-green-200 to-def-dark-200 absolute bottom-10 -left-10 rounded-full group-hover:rotate-45 ease-in-out duration-500"/>
                 <div className="w-[150px] h-[320px] bg-def-dark-200"/>
               </div>
               <div>
-                <div className="w-[60px] h-[60px] bg-gradient-to-r from-[#278568] to-def-green-100 absolute top-0 right-6 rounded-full"/>
+                <div className="w-[60px] h-[60px] bg-gradient-to-r from-[#278568] to-def-green-100 absolute top-0 right-6 rounded-full group-hover:rotate-90 ease-in-out duration-500"/>
                 <div className="w-[150px] h-[200px] bg-def-dark-200"/>
               </div>
             </div>

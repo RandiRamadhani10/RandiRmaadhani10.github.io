@@ -65,7 +65,7 @@ const SectionServices = () => {
         </div>
 
         {/* hiasan */}
-        <div className="absolute -top-36 right-0 w-[234px] h-[234px] bg-gradient-to-b from-[#175F52] to-def-green-100 rounded-full" />
+        <div className="absolute -top-36 right-0 w-[234px] h-[234px] bg-gradient-to-b from-[#175F52] to-def-green-100 rounded-full hover:rotate-90 ease-in-out duration-300" />
       </div>
     </div>
   );
