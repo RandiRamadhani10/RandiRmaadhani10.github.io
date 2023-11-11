@@ -1,7 +1,7 @@
 import React from "react";
 
 // image
-import FotoCV from "../assets/image/user1.png";
+import FotoCV from "../assets/image/users.png";
 
 const SectionCover = () => {
   return (
