@@ -40,7 +40,7 @@ const SectionAbout = () => {
           {/* Experience */}
           <div className="flex flex-col items-center">
             <div className="font-bold text-4xl mb-2 text-[#9effe1]">
-              <CountUp start={-500} end={2} duration={1.5} useEasing={true} enableScrollSpy={false} scrollSpyDelay={5} useGrouping={true} separator="," decimal=".">
+              <CountUp start={-500} end={3} duration={1.5} useEasing={true} enableScrollSpy={false} scrollSpyDelay={5} useGrouping={true} separator="," decimal=".">
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start}>
                     <span ref={countUpRef} />
