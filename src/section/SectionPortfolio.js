@@ -8,56 +8,55 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "./swiper-css.css"
+import "./swiper-css.css";
 
 // import required modules
 import { Pagination } from "swiper/modules";
 import { Controller } from "swiper/modules";
 
 // icon
-import {
-  ArrowSmallRightIcon,
-  ArrowSmallLeftIcon,
-} from "@heroicons/react/24/solid";
+import { ArrowSmallRightIcon, ArrowSmallLeftIcon } from "@heroicons/react/24/solid";
 import PopUpPortfolio from "../components/PopUpPortfolio";
 
 // dumy data
 const dummyData = [
   {
-    title: "Project 1",
-    descript:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    image: "https://placehold.co/600x400.png",
+    title: "Evorty",
+    descript: "Evorty is an event management expertise that helps and makes it easier for Event Planners to achieve the goal of carrying out an event.",
+    image: "https://res.cloudinary.com/do3gqpixo/image/upload/v1699427660/portfolio/lvxnofeynceq1lnqgjs4.png",
   },
   {
-    title: "Project 2",
-    descript:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    image: "https://placehold.co/600x400.png",
+    title: "SecondHand",
+    descript: "Is a Mobile App for an E-Commerce Platform.",
+    image: "https://firebasestorage.googleapis.com/v0/b/starter-9dff2.appspot.com/o/secondhand.png?alt=media&token=dc9182e7-2d02-45a6-8115-978331a3f91e",
   },
   {
-    title: "Project 3",
+    title: "MyWalet",
     descript:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    image: "https://placehold.co/600x400.png",
+      "I'm proud to present my latest project on LinkedIn, an IoT application designed to manage swallow nest farms. This innovative application was developed using React Native and Firebase, showcasing my skills in mobile app development and cloud integration.",
+    image: "https://firebasestorage.googleapis.com/v0/b/starter-9dff2.appspot.com/o/mywalet.png?alt=media&token=7e5e4fde-3bf1-49ed-a9c7-ed7daa019745",
   },
   {
-    title: "Project 4",
-    descript:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    image: "https://placehold.co/600x400.png",
+    title: "MyBas",
+    descript: "I had the opportunity to lead the development of this innovative Smart Home Application that allows users to remotely control their home devices and appliances using their smartphones.",
+    image: "https://firebasestorage.googleapis.com/v0/b/starter-9dff2.appspot.com/o/mybass.png?alt=media&token=e49e92c9-4677-430d-bec0-d0c5b5527bce",
   },
   {
-    title: "Project 5",
-    descript:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    image: "https://placehold.co/600x400.png",
+    title: "Selamanik Laundry",
+    descript: "I developed a comprehensive Laundry Management Application that simplifies the laundry process and enhances the user experience. This project showcases my skills in mobile app development and backend web development.",
+    image: "https://firebasestorage.googleapis.com/v0/b/starter-9dff2.appspot.com/o/selamanik.png?alt=media&token=e7f3deb3-c177-4af7-9a15-cfd6fccf7688",
   },
   {
-    title: "Project 6",
+    title: "Absensi PT. Gunung Api Mulia",
     descript:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    image: "https://placehold.co/600x400.png",
+      "Introducing 'Absensi PT. Gunung Api Mulia,' a cutting-edge web application developed using React.js. Absensi PT. Gunung Api Mulia is a powerful and user-friendly employee attendance management system designed to streamline and enhance administrative processes.",
+    image: "https://firebasestorage.googleapis.com/v0/b/starter-9dff2.appspot.com/o/absensi.png?alt=media&token=365659fc-4283-4485-9d66-1f19436f6a9e",
+  },
+  {
+    title: "WorkCheck",
+    descript:
+      "Introducing 'WorkCheck' the companion mobile application built with React Native for seamless and efficient employee attendance management on the go. WorkCheck extends the capabilities of the Absensi PT. Gunung Api Mulia web application, providing administrators and employees with a convenient and accessible solution directly from their mobile devices.",
+    image: "https://firebasestorage.googleapis.com/v0/b/starter-9dff2.appspot.com/o/workcheck.png?alt=media&token=81058881-c45a-476e-bf95-86ae218383cd",
   },
 ];
 
@@ -70,12 +69,10 @@ function getWindowDimensions() {
 }
 
 const SectionPortfolio = () => {
-  const [isOpenModal, setisOpenModal] = useState(false)
-  const [selectedPorto, setselectedPorto] = useState({})
+  const [isOpenModal, setisOpenModal] = useState(false);
+  const [selectedPorto, setselectedPorto] = useState({});
   const [controlledSwiper, setControlledSwiper] = useState(null);
-  const [windowDimensions, setWindowDimensions] = useState(
-    getWindowDimensions()
-  );
+  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 
   useEffect(() => {
     function handleResize() {
@@ -97,24 +94,14 @@ const SectionPortfolio = () => {
 
           {/* descript */}
           <div className="flex justify-center m-auto mb-12 text-center max-w-2xl">
-            <div>
-              Explore my design services, from user interface and experience to
-              prototyping and testing. Let's craft exceptional digital
-              experiences together.
-            </div>
+            <div>Explore my projects, encompassing user interface and experience, prototyping, and testing for web and mobile projects. Let's collaboratively build outstanding digital experiences together.</div>
           </div>
         </div>
 
         {/* card */}
         <div className="relative mt-5 sm:-mt-24">
           <Swiper
-            slidesPerView={
-              windowDimensions.width >= 990
-                ? 3
-                : windowDimensions.width >= 760
-                ? 2
-                : 1
-            }
+            slidesPerView={windowDimensions.width >= 990 ? 3 : windowDimensions.width >= 760 ? 2 : 1}
             spaceBetween={30}
             slidesPerGroup={1}
             pagination={{
@@ -128,19 +115,15 @@ const SectionPortfolio = () => {
             className="swiper w-[87%]"
           >
             {dummyData.map((res, index) => (
-              <SwiperSlide 
-                key={"itemCardPorto" + index} 
+              <SwiperSlide
+                key={"itemCardPorto" + index}
                 className="mb-1"
-                onClick={async() => {
-                  await setselectedPorto(res)
-                  await setisOpenModal(true)
+                onClick={async () => {
+                  await setselectedPorto(res);
+                  await setisOpenModal(true);
                 }}
               >
-                <CardPortfolio
-                  title={res.title}
-                  descript={res.descript}
-                  image={res.image}
-                />
+                <CardPortfolio title={res.title} descript={res.descript} image={res.image} />
               </SwiperSlide>
             ))}
             <div className="my-custom-pagination-div block xl:hidden mt-5" />
@@ -151,7 +134,7 @@ const SectionPortfolio = () => {
             <div
               className=" cursor-pointer w-[50px] h-[50px] flex justify-center items-center top-[-210px] left-[-70px]"
               onClick={() => {
-                controlledSwiper.slidePrev()
+                controlledSwiper.slidePrev();
               }}
             >
               <ArrowSmallLeftIcon className="bg-def-dark-100 hover:bg-def-green-200 rounded-full w-12 p-3 ease-in-out duration-300" />
@@ -170,7 +153,7 @@ const SectionPortfolio = () => {
         </div>
 
         {/* pop up */}
-        <PopUpPortfolio isOpen={isOpenModal} setisopen={setisOpenModal} data={selectedPorto}/>
+        <PopUpPortfolio isOpen={isOpenModal} setisopen={setisOpenModal} data={selectedPorto} />
       </div>
     </div>
   );

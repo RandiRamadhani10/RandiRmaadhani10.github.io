@@ -1,11 +1,7 @@
 import React from "react";
 
 // icon
-import {
-  ComputerDesktopIcon,
-  DevicePhoneMobileIcon,
-  PaintBrushIcon,
-} from "@heroicons/react/24/outline";
+import { ComputerDesktopIcon, DevicePhoneMobileIcon, PaintBrushIcon } from "@heroicons/react/24/outline";
 
 const SectionServices = () => {
   return (
@@ -19,9 +15,8 @@ const SectionServices = () => {
         {/* desc */}
         <div className="flex justify-center m-auto mb-12 text-center max-w-2xl">
           <div className="text-def-light-200">
-            Explore my design services, from user interface and experience to
-            prototyping and testing. Let's craft exceptional digital experiences
-            together.
+            Experienced Web & Mobile Developer with a demonstrated history of working in the information technology and services industry. Skilled in JavaScript, React.js, and React native. Strong engineering professional with a Bachelor's
+            degree focused in Computer Programming.
           </div>
         </div>
 
@@ -33,10 +28,7 @@ const SectionServices = () => {
               <ComputerDesktopIcon className="text-def-green-200 w-16" />
             </div>
             <div className="font-bold mb-3 text-lg group-hover:text-def-green-200 ease-in-out duration-300">Web Development</div>
-            <div className="font-light">
-              I specialize in web development and design, creating visually
-              appealing, user-friendly digital experiences.
-            </div>
+            <div className="font-light">I specialize in web development and design, creating visually appealing, user-friendly digital experiences.</div>
           </div>
 
           {/* mobile */}
@@ -45,10 +37,7 @@ const SectionServices = () => {
               <DevicePhoneMobileIcon className="text-def-green-200 w-16" />
             </div>
             <div className="font-bold mb-3 text-lg group-hover:text-def-green-200 ease-in-out duration-300">Mobile Development</div>
-            <div className="font-light">
-              I specialize in web development and design, creating visually
-              appealing, user-friendly digital experiences.
-            </div>
+            <div className="font-light">I specialize in mobile development and design, creating visually appealing, user-friendly digital experiences.</div>
           </div>
 
           {/* design */}
@@ -57,10 +46,7 @@ const SectionServices = () => {
               <PaintBrushIcon className="text-def-green-200 w-16" />
             </div>
             <div className="font-bold mb-3 text-lg group-hover:text-def-green-200 ease-in-out duration-300">Design</div>
-            <div className="font-light">
-              I specialize in web development and design, creating visually
-              appealing, user-friendly digital experiences.
-            </div>
+            <div className="font-light">Focused on UI/UX excellence and mobile development, I craft visually captivating and user-friendly digital experiences.</div>
           </div>
         </div>
 

@@ -16,11 +16,8 @@ const SectionAbout = () => {
         {/* about */}
         <div className="flex justify-center m-auto mb-12 text-center max-w-2xl">
           <div className="text-def-light-200">
-            I'm Sara Jones, a UI/UX designer dedicated to crafting intuitive and
-            visually stunning digital experiences. With a passion for
-            user-centric design, I transform ideas into functional and beautiful
-            interfaces. Let's collaborate and shape the future of design
-            together.
+            I'm Dwi Randi Ramadhani, a software developer dedicated to crafting intuitive and visually appealing digital experiences. With a passion for user-centric design, I transform ideas into functional and beautiful interfaces. Let's
+            collaborate and shape the future of software development together.
           </div>
         </div>
 
@@ -29,17 +26,7 @@ const SectionAbout = () => {
           {/* project done */}
           <div className="flex flex-col items-center">
             <div className="font-bold text-4xl mb-2 text-[#9effe1]">
-              <CountUp
-                start={-500}
-                end={502}
-                duration={1.5}
-                useEasing={true}
-                enableScrollSpy={false}
-                scrollSpyDelay={5}
-                useGrouping={true}
-                separator=","
-                decimal="."
-              >
+              <CountUp start={-500} end={84} duration={1.5} useEasing={true} enableScrollSpy={false} scrollSpyDelay={5} useGrouping={true} separator="," decimal=".">
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start}>
                     <span ref={countUpRef} />
@@ -53,17 +40,7 @@ const SectionAbout = () => {
           {/* Experience */}
           <div className="flex flex-col items-center">
             <div className="font-bold text-4xl mb-2 text-[#9effe1]">
-              <CountUp
-                start={-500}
-                end={10}
-                duration={1.5}
-                useEasing={true}
-                enableScrollSpy={false}
-                scrollSpyDelay={5}
-                useGrouping={true}
-                separator=","
-                decimal="."
-              >
+              <CountUp start={-500} end={2} duration={1.5} useEasing={true} enableScrollSpy={false} scrollSpyDelay={5} useGrouping={true} separator="," decimal=".">
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start}>
                     <span ref={countUpRef} />
@@ -78,17 +55,7 @@ const SectionAbout = () => {
           {/* Clents */}
           <div className="flex flex-col items-center">
             <div className="font-bold text-4xl mb-2 text-[#9effe1]">
-              <CountUp
-                start={-500}
-                end={200}
-                duration={1.5}
-                useEasing={true}
-                enableScrollSpy={false}
-                scrollSpyDelay={5}
-                useGrouping={true}
-                separator=","
-                decimal="."
-              >
+              <CountUp start={-500} end={34} duration={1.5} useEasing={true} enableScrollSpy={false} scrollSpyDelay={5} useGrouping={true} separator="," decimal=".">
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start}>
                     <span ref={countUpRef} />

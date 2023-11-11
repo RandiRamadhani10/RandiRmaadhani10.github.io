@@ -43,11 +43,7 @@ const SectionSkills = () => {
 
         {/* descript */}
         <div className="flex justify-center m-auto mb-12 text-center max-w-2xl">
-          <div>
-            I excel in essential design skills, creating visually stunning and
-            functional digital experiences. From UI design to UX research, my
-            passion is to craft effective and memorable digital solutions.
-          </div>
+          <div>I excel in fundamental software development skills, creating visually stunning and functional digital experiences. From coding to software architecture, my passion is to craft effective and memorable digital solutions.</div>
         </div>
 
         {/* skills */}
@@ -55,14 +51,7 @@ const SectionSkills = () => {
           {({ isVisible }) => (
             <div className="flex justify-between items-start flex-wrap gap-y-3">
               {dummyData.map((res, index) => {
-                return (
-                  <CardSkill
-                    key={"skill" + index}
-                    title={res.title}
-                    progress={res.progress}
-                    isVisible={isVisible}
-                  />
-                );
+                return <CardSkill key={"skill" + index} title={res.title} progress={res.progress} isVisible={isVisible} />;
               })}
             </div>
           )}
