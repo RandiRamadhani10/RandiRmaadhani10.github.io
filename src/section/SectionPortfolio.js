@@ -60,9 +60,8 @@ const dummyData = [
   },
   {
     title: "Telemadicine",
-    descript:
-      "Telemadicine, a healthcare app, streamlines user access to healthcare services through virtual consultations, appointment booking, and prescription management.",
-    image: "https://firebasestorage.googleapis.com/v0/b/starter-9dff2.appspot.com/o/Group%202.png?alt=media&token=9b8f676e-2434-4ca4-aba0-ce281ece72a8",
+    descript: "Telemadicine, a healthcare app, streamlines user access to healthcare services through virtual consultations, appointment booking, and prescription management.",
+    image: "https://firebasestorage.googleapis.com/v0/b/starter-9dff2.appspot.com/o/Frame%201.png?alt=media&token=27093d5f-0abc-4b43-b053-59f39d7b1c53",
   },
 ];
 
