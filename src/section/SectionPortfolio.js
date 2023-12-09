@@ -58,6 +58,12 @@ const dummyData = [
       "Introducing 'WorkCheck' the companion mobile application built with React Native for seamless and efficient employee attendance management on the go. WorkCheck extends the capabilities of the Absensi PT. Gunung Api Mulia web application, providing administrators and employees with a convenient and accessible solution directly from their mobile devices.",
     image: "https://firebasestorage.googleapis.com/v0/b/starter-9dff2.appspot.com/o/workcheck.png?alt=media&token=81058881-c45a-476e-bf95-86ae218383cd",
   },
+  {
+    title: "Telemadicine",
+    descript:
+      "Telemadicine, a healthcare app, streamlines user access to healthcare services through virtual consultations, appointment booking, and prescription management.",
+    image: "https://firebasestorage.googleapis.com/v0/b/starter-9dff2.appspot.com/o/Group%202.png?alt=media&token=9b8f676e-2434-4ca4-aba0-ce281ece72a8",
+  },
 ];
 
 function getWindowDimensions() {
