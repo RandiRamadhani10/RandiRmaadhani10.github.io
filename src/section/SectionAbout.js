@@ -64,7 +64,7 @@ const SectionAbout = () => {
               </CountUp>
               <span>+</span>
             </div>
-            <div>Clents Served</div>
+            <div>Clients Served</div>
           </div>
         </div>
 
